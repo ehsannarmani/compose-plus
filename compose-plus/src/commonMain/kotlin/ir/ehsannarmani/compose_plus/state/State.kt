@@ -11,45 +11,45 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 
 @Composable
-inline fun <T>state(value:T) = remember {
+inline fun <T>rememberState(value:T) = remember {
     mutableStateOf(value)
 }
 @Composable
-inline fun <T>state(value:T,vararg keys:Any) = remember(*keys) {
+inline fun <T>rememberState(value:T,vararg keys:Any) = remember(*keys) {
     mutableStateOf(value)
 }
 
 @Composable
-inline fun <T>listState(vararg items:T) = remember {
+inline fun <T>rememberListState(vararg items:T) = remember {
     mutableStateListOf(*items)
 }
 @Composable
-inline fun <reified T>listState(vararg items:T,keys:List<Any> = emptyList()) = remember(*keys.toTypedArray()) {
+inline fun <reified T>rememberListState(vararg items:T,keys:List<Any> = emptyList()) = remember(*keys.toTypedArray()) {
     mutableStateListOf(*items)
 }
 @Composable
-inline fun <reified T>listState(items:List<T>) = listState(*items.toTypedArray())
+inline fun <reified T>rememberListState(items:List<T>) = rememberListState(*items.toTypedArray())
 @Composable
-inline fun <reified T>listState(items:List<T>,vararg keys: Any) = listState(*items.toTypedArray(),keys)
+inline fun <reified T>rememberListState(items:List<T>,vararg keys: Any) = rememberListState(*items.toTypedArray(),keys)
 
 @Composable
-inline fun <K,V>mapState(vararg pairs:Pair<K,V>) = remember {
+inline fun <K,V>rememberMapState(vararg pairs:Pair<K,V>) = remember {
     mutableStateMapOf(*pairs)
 }
 @Composable
-inline fun <K,V>mapState(vararg pairs:Pair<K,V>,keys: List<Any>) = remember(*keys.toTypedArray()) {
+inline fun <K,V>rememberMapState(vararg pairs:Pair<K,V>,keys: List<Any>) = remember(*keys.toTypedArray()) {
     mutableStateMapOf(*pairs)
 }
 
 @Composable
-inline fun boolState(initial:Boolean = false) = state(false)
+inline fun rememberBoolState(initial:Boolean = false) = rememberState(false)
 @Composable
-inline fun stringState(initial:String) = state("")
+inline fun rememberStringState(initial:String = "") = rememberState("")
 @Composable
-inline fun intState(initial:Int = 0) = remember { mutableIntStateOf(initial) }
+inline fun rememberIntState(initial:Int = 0) = remember { mutableIntStateOf(initial) }
 @Composable
-inline fun floatState(initial:Float = 0f) = remember { mutableFloatStateOf(initial) }
+inline fun rememberFloatState(initial:Float = 0f) = remember { mutableFloatStateOf(initial) }
 @Composable
-inline fun doubleState(initial: Double = 0.0) = remember { mutableDoubleStateOf(initial) }
+inline fun rememberDoubleState(initial: Double = 0.0) = remember { mutableDoubleStateOf(initial) }
 @Composable
-inline fun longState(initial: Long = 0) = remember { mutableLongStateOf(initial) }
+inline fun rememberLongState(initial: Long = 0) = remember { mutableLongStateOf(initial) }

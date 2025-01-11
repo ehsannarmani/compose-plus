@@ -13,47 +13,47 @@ import androidx.compose.runtime.saveable.autoSaver
 import androidx.compose.runtime.saveable.rememberSaveable
 
 @Composable
-inline fun <T>saveableState(value:T,saver: Saver<T, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) {
+inline fun <T>rememberSaveableState(value:T,saver: Saver<T, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) {
     mutableStateOf(value)
 }
 @Composable
-inline fun <T>saveableState(value:T,saver: Saver<T, out Any> = autoSaver(),vararg keys:Any) = rememberSaveable(*keys, stateSaver = saver) {
+inline fun <T>rememberSaveableState(value:T,saver: Saver<T, out Any> = autoSaver(),vararg keys:Any) = rememberSaveable(*keys, stateSaver = saver) {
     mutableStateOf(value)
 }
 
 @Composable
-inline fun <T>saveableListState(vararg items:T,saver: Saver<List<T>, out Any> = autoSaver()) = rememberSaveable(saver = saver) {
+inline fun <T>rememberSaveableListState(vararg items:T,saver: Saver<List<T>, out Any> = autoSaver()) = rememberSaveable(saver = saver) {
     mutableStateListOf(*items)
 }
 @Composable
-inline fun <reified T>saveableListState(vararg items:T,keys:List<Any> = emptyList(),saver: Saver<List<T>, out Any> = autoSaver()) = rememberSaveable(*keys.toTypedArray(),saver = saver) {
+inline fun <reified T>rememberSaveableListState(vararg items:T,keys:List<Any> = emptyList(),saver: Saver<List<T>, out Any> = autoSaver()) = rememberSaveable(*keys.toTypedArray(),saver = saver) {
     mutableStateListOf(*items)
 }
 
 @Composable
-inline fun <reified T>saveableListState(items:List<T>,saver: Saver<List<T>, out Any> = autoSaver()) = listState(*items.toTypedArray(),saver)
+inline fun <reified T>rememberSaveableListState(items:List<T>,saver: Saver<List<T>, out Any> = autoSaver()) = rememberListState(*items.toTypedArray(),saver)
 @Composable
-inline fun <reified T>saveableListState(items:List<T>,saver: Saver<List<T>, out Any> = autoSaver(),vararg keys: Any) = listState(*items.toTypedArray(),saver,keys)
+inline fun <reified T>rememberSaveableListState(items:List<T>,saver: Saver<List<T>, out Any> = autoSaver(),vararg keys: Any) = rememberListState(*items.toTypedArray(),saver,keys)
 
 @Composable
-inline fun <K,V>saveableMapState(vararg pairs:Pair<K,V>,saver: Saver<Map<K,V>, out Any> = autoSaver()) = rememberSaveable(saver = saver) {
+inline fun <K,V>rememberSaveableMapState(vararg pairs:Pair<K,V>,saver: Saver<Map<K,V>, out Any> = autoSaver()) = rememberSaveable(saver = saver) {
     mutableStateMapOf(*pairs)
 }
 @Composable
-inline fun <K,V>saveableMapState(vararg pairs:Pair<K,V>,keys: List<Any>,saver: Saver<Map<K,V>, out Any> = autoSaver()) = rememberSaveable(*keys.toTypedArray(),saver) {
+inline fun <K,V>rememberSaveableMapState(vararg pairs:Pair<K,V>,keys: List<Any>,saver: Saver<Map<K,V>, out Any> = autoSaver()) = rememberSaveable(*keys.toTypedArray(),saver) {
     mutableStateMapOf(*pairs)
 }
 
 @Composable
-inline fun boolState(initial:Boolean = false,saver: Saver<Boolean, out Any> = autoSaver()) = saveableState(false,saver)
+inline fun rememberSaveableBoolState(initial:Boolean = false,saver: Saver<Boolean, out Any> = autoSaver()) = rememberSaveableState(false,saver)
 @Composable
-inline fun stringState(initial:String,saver: Saver<String, out Any> = autoSaver()) = saveableState("",saver)
+inline fun rememberSaveableStringState(initial:String = "",saver: Saver<String, out Any> = autoSaver()) = rememberSaveableState("",saver)
 @Composable
-inline fun intState(initial:Int = 0,saver: Saver<Int, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) { mutableIntStateOf(initial) }
+inline fun rememberSaveableIntState(initial:Int = 0,saver: Saver<Int, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) { mutableIntStateOf(initial) }
 @Composable
-inline fun floatState(initial:Float = 0f,saver: Saver<Float, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) { mutableFloatStateOf(initial) }
+inline fun rememberSaveableFloatState(initial:Float = 0f,saver: Saver<Float, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) { mutableFloatStateOf(initial) }
 @Composable
-inline fun doubleState(initial: Double = 0.0,saver: Saver<Double, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) { mutableDoubleStateOf(initial) }
+inline fun rememberSaveableDoubleState(initial: Double = 0.0,saver: Saver<Double, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) { mutableDoubleStateOf(initial) }
 @Composable
-inline fun longState(initial: Long = 0,saver: Saver<Long, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) { mutableLongStateOf(initial) }
+inline fun rememberSaveableLongState(initial: Long = 0,saver: Saver<Long, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) { mutableLongStateOf(initial) }
 
