@@ -43,6 +43,9 @@ jobs:
         with:
           xcode-version: latest-stable
 
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+
       - name: Publish To Maven Central
         run: |
           ./gradlew publishAndReleaseToMavenCentral --no-configuration-cache
