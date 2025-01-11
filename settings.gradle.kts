@@ -1,4 +1,4 @@
-rootProject.name = "ComposePlus"
+rootProject.name = "ComposePlusPrj"
 enableFeaturePreview("TYPESAFE_PROJECT_ACCESSORS")
 
 pluginManagement {
