@@ -9,23 +9,23 @@
 **Compose Plus** is organized into three main sections:
 
 ### 1. **Components**
-A collection of pre-built, customizable UI components ready to be used in your projects. These components help save development time and provide consistent design patterns.
+A collection of pre-built UI components that make using commonly used Compose components easier and more efficient, while providing simpler integration.
 
 ### 2. **Functions**
-A variety of utility functions designed to simplify common operations in Jetpack Compose, such as data manipulation, styling, and navigation.
+A variety of utility functions designed to simplify common operations in Jetpack Compose, such as using states and etc.
 
 ### 3. **Extensions**
-Extensions that enhance Jetpack Compose by adding extra functionality, making it easier to integrate custom features seamlessly.
+Extensions that simplify and streamline the use of existing Jetpack Compose features, providing convenient and efficient ways to utilize current functionality, like extension functions for Modifier.
 
 
 ## **Getting Started**
 
 ### 1. **Add Library to Your Project**
-You can add **Compose Plus** to your Jetpack Compose project via Maven or Gradle:
 
-**Using Gradle:**
 ```kotlin
-implementation ("com.yourdomain:compose-plus:0.0.3-beta")
+implementation ("ir.ehsannarmani.compose-plus:extensions:0.0.3-beta")
+implementation ("ir.ehsannarmani.compose-plus:functions:0.0.3-beta")
+implementation ("ir.ehsannarmani.compose-plus:components:0.0.3-beta")
 ```
 
 ## **Documentation**
