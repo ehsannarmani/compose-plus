@@ -2,7 +2,7 @@
 # **Compose Plus**
 **Enhance Your Jetpack Compose Experience**
 
-**Compose Plus** is an open-source multi-platform library developed to make Jetpack Compose development easier and more efficient. This library offers reusable components, utility functions, and extensions that streamline common tasks, helping you build better apps with less effort.
+**Compose Plus** is an open-source multi-platform library designed to simplify Jetpack Compose development. It provides reusable components, utility functions, and extensions that streamline common tasks, making app development more efficient and easier.
 
 ## **Project Structure**
 
@@ -29,10 +29,6 @@ implementation ("ir.ehsannarmani.compose-plus:components:0.0.3-beta")
 ```
 
 ## **Documentation**
-
-- **Components Documentation**: Detailed guides and examples for each UI component.
-- **Functions Documentation**: Instructions and use cases for utility functions.
-- **Extensions Documentation**: Explanation of available extensions and how to integrate them.
 
 ---
 
