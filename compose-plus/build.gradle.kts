@@ -11,7 +11,7 @@ plugins {
 }
 mavenPublishing{
     coordinates(
-        groupId = "ir.ehsannarmani.compose_plus",
+        groupId = "ir.ehsannarmani.compose-plus",
         artifactId = "extensions",
         version = "0.0.2-beta"
     )
