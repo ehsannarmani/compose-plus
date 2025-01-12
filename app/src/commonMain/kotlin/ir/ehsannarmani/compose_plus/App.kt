@@ -85,7 +85,7 @@ fun App() {
         item {
             LazyItem {
                 var visible by rememberBoolState(true)
-                Column(modifier=Modifier.fillMaxSize().scaleIn(delay = 900), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
+                Column(modifier=Modifier.fillMaxSize().scaleIn(delay = 900).fadeIn(delay = 1000), verticalArrangement = Arrangement.Center, horizontalAlignment = Alignment.CenterHorizontally) {
                     Text(
                         text = "Hello compose plus!",
                         modifier=Modifier.scaleVisibleIf(visible)
