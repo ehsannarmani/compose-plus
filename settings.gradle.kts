@@ -29,4 +29,7 @@ dependencyResolutionManagement {
 }
 
 include(":app")
-include(":compose-plus")
+
+include(":compose-plus:functions")
+include(":compose-plus:extensions")
+include(":compose-plus:components")

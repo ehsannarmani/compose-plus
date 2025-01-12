@@ -1,4 +1,4 @@
-package ir.ehsannarmani.compose_plus.state
+package ir.ehsannarmani.compose_plus.functions.state
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableDoubleStateOf

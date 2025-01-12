@@ -60,7 +60,9 @@ kotlin {
             implementation(libs.androidx.activity.compose)
         }
         commonMain.dependencies {
-            implementation(project(":compose-plus"))
+            implementation(project(":compose-plus:functions"))
+            implementation(project(":compose-plus:extensions"))
+            implementation(project(":compose-plus:components"))
             implementation(compose.runtime)
             implementation(compose.foundation)
             implementation(compose.ui)
