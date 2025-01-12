@@ -11,9 +11,9 @@ plugins {
 }
 mavenPublishing{
     coordinates(
-        groupId = "io.github.ehsannarmani",
-        artifactId = "compose-plus",
-        version = "0.0.1-beta"
+        groupId = "ir.ehsannarmani.compose_plus",
+        artifactId = "extensions",
+        version = "0.0.2-beta"
     )
     pom{
         name.set("Compose Plus")
