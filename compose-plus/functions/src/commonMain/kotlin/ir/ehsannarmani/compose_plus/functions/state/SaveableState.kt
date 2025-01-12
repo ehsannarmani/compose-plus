@@ -45,9 +45,9 @@ fun <K,V>rememberSaveableMapState(vararg pairs:Pair<K,V>,keys: List<Any>,saver: 
 }
 
 @Composable
-fun rememberSaveableBoolState(initial:Boolean = false,saver: Saver<Boolean, out Any> = autoSaver()) = rememberSaveableState(false,saver)
+fun rememberSaveableBoolState(initial:Boolean = false,saver: Saver<Boolean, out Any> = autoSaver()) = rememberSaveableState(initial,saver)
 @Composable
-fun rememberSaveableStringState(initial:String = "",saver: Saver<String, out Any> = autoSaver()) = rememberSaveableState("",saver)
+fun rememberSaveableStringState(initial:String = "",saver: Saver<String, out Any> = autoSaver()) = rememberSaveableState(initial,saver)
 @Composable
 fun rememberSaveableIntState(initial:Int = 0,saver: Saver<Int, out Any> = autoSaver()) = rememberSaveable(stateSaver = saver) { mutableIntStateOf(initial) }
 @Composable

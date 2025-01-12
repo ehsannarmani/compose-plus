@@ -42,9 +42,9 @@ fun <K,V>rememberMapState(vararg pairs:Pair<K,V>,keys: List<Any>) = remember(*ke
 }
 
 @Composable
-fun rememberBoolState(initial:Boolean = false) = rememberState(false)
+fun rememberBoolState(initial:Boolean = false) = rememberState(initial)
 @Composable
-fun rememberStringState(initial:String = "") = rememberState("")
+fun rememberStringState(initial:String = "") = rememberState(initial)
 @Composable
 fun rememberIntState(initial:Int = 0) = remember { mutableIntStateOf(initial) }
 @Composable

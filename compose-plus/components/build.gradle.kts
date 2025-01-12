@@ -13,6 +13,10 @@ setupMavenPublishing(artifactId = "components")
 configureAndroid(artifactId = "components")
 
 kotlin {
+    compilerOptions {
+        freeCompilerArgs.add("-Xcontext-receivers")
+    }
+
     @OptIn(org.jetbrains.kotlin.gradle.ExperimentalWasmDsl::class)
     wasmJs {
         moduleName = "compose-plus-components"
