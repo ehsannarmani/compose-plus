@@ -1,5 +1,9 @@
 package ir.ehsannarmani.compose_plus.extensions
 
+import androidx.compose.animation.AnimatedContent
+import androidx.compose.animation.AnimatedContentScope
+import androidx.compose.animation.AnimatedContentTransitionScope
+import androidx.compose.animation.ContentTransform
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.AnimationSpec
 import androidx.compose.animation.core.animateDpAsState
@@ -10,7 +14,12 @@ import androidx.compose.animation.core.animateIntSizeAsState
 import androidx.compose.animation.core.animateOffsetAsState
 import androidx.compose.animation.core.animateSizeAsState
 import androidx.compose.animation.core.tween
+import androidx.compose.animation.fadeIn
+import androidx.compose.animation.fadeOut
+import androidx.compose.animation.scaleIn
+import androidx.compose.animation.togetherWith
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
@@ -42,3 +51,26 @@ fun Size.animate(spec: AnimationSpec<Size> = tween(400)) = animateSizeAsState(ta
 
 @Composable
 fun IntSize.animate(spec: AnimationSpec<IntSize> = tween(400)) = animateIntSizeAsState(targetValue = this, animationSpec = spec)
+
+@Composable
+fun <T>T.animateContent(
+    modifier:Modifier = Modifier,
+    label:String = "AnimatedContent",
+    transitionSpec: AnimatedContentTransitionScope<T>.() -> ContentTransform = {
+        (fadeIn(animationSpec = tween(220, delayMillis = 90)) +
+                scaleIn(initialScale = 0.92f, animationSpec = tween(220, delayMillis = 90)))
+            .togetherWith(fadeOut(animationSpec = tween(90)))
+    },
+    contentKey: (targetState: T) -> Any? = { it },
+    content: @Composable AnimatedContentScope.(T)->Unit
+){
+    AnimatedContent(
+        modifier=modifier,
+        label = label,
+        targetState = this,
+        contentKey = contentKey,
+        transitionSpec = transitionSpec
+    ){ state->
+        content(state)
+    }
+}
