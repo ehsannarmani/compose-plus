@@ -15,7 +15,7 @@
 
 ### Gradle Setup
 
-[![Maven Central](https://img.shields.io/maven-central/v/io.github.ehsannarmani/compose-charts?color=4caf50&label=Latest%20Release&v=10)](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=0)
+[![Maven Central](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=0)](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=0)
 
 ``` groovy hl_lines="2"
 dependencies {

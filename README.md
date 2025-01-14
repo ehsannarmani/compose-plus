@@ -1,8 +1,30 @@
 
 # **Compose Plus**
+
+![Kotlin](https://img.shields.io/badge/Kotlin-2.1.0-orange)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![Kotlin Multiplatform](https://img.shields.io/badge/Kotlin-Multiplatform-blue)](https://kotlinlang.org/docs/reference/multiplatform.html)
+
+![Platform](https://img.shields.io/badge/Android-3aab58)
+![Platform](https://img.shields.io/badge/Desktop-097cd5)
+![Platform](https://img.shields.io/badge/IOS-d32408)
+![Platform](https://img.shields.io/badge/WasmJS-f7e025)
+
 **Enhance Your Jetpack Compose Experience**
 
 **Compose Plus** is an open-source multi-platform library designed to simplify Jetpack Compose development. It provides reusable components, utility functions, and extensions that streamline common tasks, making app development more efficient and easier.
+
+
+## **Getting Started**
+
+### **Add Library to Your Project**
+[![Maven Central](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=0)](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=0)
+
+```kotlin
+implementation ("ir.ehsannarmani.compose-plus:extensions:latest_version")
+implementation ("ir.ehsannarmani.compose-plus:functions:latest_version")
+implementation ("ir.ehsannarmani.compose-plus:components:latest_version")
+```
 
 ## **Project Structure**
 
@@ -75,15 +97,6 @@ Some examples:
     /* ------------ Direction ------------ */
 ```
 
-## **Getting Started**
-
-### **Add Library to Your Project**
-
-```kotlin
-implementation ("ir.ehsannarmani.compose-plus:extensions:0.0.3-beta")
-implementation ("ir.ehsannarmani.compose-plus:functions:0.0.3-beta")
-implementation ("ir.ehsannarmani.compose-plus:components:0.0.3-beta")
-```
 
 ## **Contributing**
 
