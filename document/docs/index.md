@@ -17,8 +17,10 @@
 
 [![Maven Central](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=1)](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=1)
 
-``` groovy hl_lines="2"
+``` groovy hl_lines="2 3 4"
 dependencies {
-    implementation ("ir.ehsannarmani:compose-plus:latest_version")
+    implementation ("ir.ehsannarmani.compose-plus:extensions:latest_version")
+    implementation ("ir.ehsannarmani.compose-plus:functions:latest_version")
+    implementation ("ir.ehsannarmani.compose-plus:components:latest_version")
 }
 ```
