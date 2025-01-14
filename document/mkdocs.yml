@@ -21,17 +21,19 @@ theme:
   palette:
     - scheme: slate
       toggle:
+        icon: material/lightbulb
+        name: switch to light mode
+      primary: teal
+      accent: light blue
+
+    - scheme: default
+      toggle:
         icon: material/lightbulb-outline
         name: Switch to dark mode
       primary: teal
       accent: light blue
 
-    - scheme: slate
-      toggle:
-        icon: material/lightbulb
-        name: switch to light mode
-      primary: teal
-      accent: light blue
+
 
 repo_name: ComposePlus
 repo_url: https://github.com/ehsannarmani/compose-plus
