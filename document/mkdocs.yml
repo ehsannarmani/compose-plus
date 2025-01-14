@@ -20,8 +20,8 @@ theme:
   language: en
   palette:
     - scheme: slate
-      primary: teal
-      accent: light blue
+      primary: Indigo
+      accent: white
 
 repo_name: ComposePlus
 repo_url: https://github.com/ehsannarmani/compose-plus
@@ -90,5 +90,5 @@ extra:
     - icon: fontawesome/brands/github-alt
       link: https://google.com
 copyright: |
-  &copy; 2024 <a href="" target="_blank">Ehsan Narmani</a>
+  &copy; 2025 <a href="" target="_blank">Ehsan Narmani</a>
 
