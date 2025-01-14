@@ -18,7 +18,7 @@
 ## **Getting Started**
 
 ### **Add Library to Your Project**
-[![Maven Central](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=0)](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=0)
+[![Maven Central](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=1)](https://img.shields.io/maven-central/v/ir.ehsannarmani.compose-plus/extensions?logo=kotlin&logoColor=%2325c2a0&label=Latest%20Version&color=%2325c2a0&cacheSeconds=1)
 
 ```kotlin
 implementation ("ir.ehsannarmani.compose-plus:extensions:latest_version")
