@@ -8,7 +8,7 @@ fun Project.setupMavenPublishing(artifactId:String) {
             coordinates(
                 groupId = "ir.ehsannarmani.compose-plus",
                 artifactId = artifactId,
-                version = "0.0.3-beta"
+                version = "0.0.1"
             )
             pom {
                 name.set("Compose Plus")
