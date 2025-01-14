@@ -19,6 +19,6 @@
 
 ``` groovy hl_lines="2"
 dependencies {
-    implementation ("io.github.ehsannarmani:compose-plus:latest_version")
+    implementation ("ir.ehsannarmani:compose-plus:latest_version")
 }
 ```
