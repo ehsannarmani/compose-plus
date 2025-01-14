@@ -1,0 +1,104 @@
+site_name: Compose Plus
+site_description: Compose Plus library document
+
+theme:
+  name: material
+  font:
+    text: Roboto
+    code: Cascadia Code
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: light blue
+
+    - scheme: slate
+      toggle:
+        icon: material/lightbulb
+        name: switch to light mode
+      primary: teal
+      accent: light blue
+
+repo_name: ComposePlus
+repo_url: https://github.com/ehsannarmani/compose-plus
+site_author: Ehsan Narmani
+
+nav:
+  - Getting Started:
+      - index.md
+  - Functions:
+      - functions/state.md
+      - functions/saveable-state.md
+      - functions/activity-contract.md
+      - functions/animation.md
+  - Extensions:
+      - extensions/bars.md
+      - extensions/dots.md
+      - extensions/indicators.md
+      - extensions/grid-lines.md
+      - extensions/axis.md
+      - extensions/dividers.md
+      - extensions/lines.md
+      - extensions/labels.md
+      - extensions/label-helpers.md
+      - extensions/popups.md
+  - Components:
+      - components/bars.md
+      - components/dots.md
+      - components/indicators.md
+      - components/grid-lines.md
+      - components/axis.md
+      - components/dividers.md
+      - components/lines.md
+      - components/labels.md
+      - components/label-helpers.md
+      - components/popups.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.snippets
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://google.com
+copyright: |
+  &copy; 2024 <a href="" target="_blank">Ehsan Narmani</a>
+
