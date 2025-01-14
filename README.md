@@ -30,7 +30,7 @@ implementation ("ir.ehsannarmani.compose-plus:components:latest_version")
 
 **Compose Plus** is organized into three main sections:
 
-### 1. Functions • [Documentation](https://nothing.com)
+### 1. Functions • [Documentation](https://ehsannarmani.github.io/compose-plus/functions/state/)
 A variety of utility functions designed to simplify common operations in Jetpack Compose, such as using states and etc.
 
 
@@ -53,7 +53,7 @@ Some examples:
     /* ------------ Remembers ------------ */
 ```
 
-### 2. Extensions • [Documentation](https://nothing.com)
+### 2. Extensions • [Documentation](https://ehsannarmani.github.io/compose-plus/functions/state/)
 Extensions that simplify and streamline the use of existing Jetpack Compose features, providing convenient and efficient ways to utilize current functionality, like extension functions for Modifier.
 
 Some examples:
@@ -74,7 +74,7 @@ Some examples:
     /* ------------ Animations ------------ */
 ```
 
-### 3. Components • [Documentation](https://nothing.com)
+### 3. Components • [Documentation](https://ehsannarmani.github.io/compose-plus/functions/state/)
 A collection of pre-built UI components that make using commonly used Compose components easier and more efficient, while providing simpler integration.
 
 Some examples:

@@ -19,7 +19,7 @@ theme:
     - content.tooltips
   language: en
   palette:
-    - scheme: default
+    - scheme: slate
       toggle:
         icon: material/lightbulb-outline
         name: Switch to dark mode
