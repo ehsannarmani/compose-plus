@@ -12,6 +12,7 @@ import androidx.compose.animation.core.animateIntAsState
 import androidx.compose.animation.core.animateIntOffsetAsState
 import androidx.compose.animation.core.animateIntSizeAsState
 import androidx.compose.animation.core.animateOffsetAsState
+import androidx.compose.animation.core.animateRectAsState
 import androidx.compose.animation.core.animateSizeAsState
 import androidx.compose.animation.core.tween
 import androidx.compose.animation.fadeIn
@@ -21,6 +22,7 @@ import androidx.compose.animation.togetherWith
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.Offset
+import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.geometry.Size
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.Dp
@@ -51,6 +53,9 @@ fun Size.animate(spec: AnimationSpec<Size> = tween(400)) = animateSizeAsState(ta
 
 @Composable
 fun IntSize.animate(spec: AnimationSpec<IntSize> = tween(400)) = animateIntSizeAsState(targetValue = this, animationSpec = spec)
+
+@Composable
+fun Rect.animate(spec: AnimationSpec<Rect> = tween(400)) = animateRectAsState(targetValue = this, animationSpec = spec)
 
 @Composable
 fun <T>T.animateContent(
